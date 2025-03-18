@@ -1,0 +1,37 @@
+{
+  "name": "spikerz.assessment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:allure": "rmdir /s /q allure-results",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:happy": "npx playwright test tests/01_socialConnectTest.spec.ts --headed",
+    "test:ci": "node clean-test-results.ts && npx playwright test",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "moment": "^2.30.1",
+    "playwright": "^1.46.0",
+    "puppeteer": "^23.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.2.0",
+    "allure-playwright": "^3.0.0-beta.10",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7"
+  }
+}
