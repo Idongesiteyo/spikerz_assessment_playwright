@@ -32,7 +32,7 @@ This repository contains a Playwright-based test automation framework implemente
 1. Clone the repository:
    ```bash
    git clone https://github.com/Idongesiteyo/spikerz_assessment_playwright.git
-   cd playwright-framework
+   cd Playwright-framework
 2. Install dependencies:
   npm install
   npm playwright install
