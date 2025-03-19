@@ -64,19 +64,19 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.51.1",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "checkboxNotCheckedTest.spec.ts",
-      "file": "checkboxNotCheckedTest.spec.ts",
+      "title": "02_invalidGoogleEmailTest.spec.ts",
+      "file": "02_invalidGoogleEmailTest.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Negative Test - Checkbox Not Checked",
-          "ok": false,
+          "title": "Negative Test - Invalid Google Email",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -89,89 +89,22 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 79918,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('You must select permissions to proceed')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 120000ms\u001b[22m\n\u001b[2m  - waiting for getByText('You must select permissions to proceed')\u001b[22m\n",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('You must select permissions to proceed')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 120000ms\u001b[22m\n\u001b[2m  - waiting for getByText('You must select permissions to proceed')\u001b[22m\n\n    at C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts:76:32",
-                    "matcherResult": {
-                      "message": "\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('You must select permissions to proceed')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 120000ms\u001b[22m\n\u001b[2m  - waiting for getByText('You must select permissions to proceed')\u001b[22m\n",
-                      "pass": false,
-                      "actual": "<element(s) not found>",
-                      "name": "toBeVisible",
-                      "expected": "visible",
-                      "log": [
-                        "  - expect.toBeVisible with timeout 120000ms",
-                        "  - waiting for getByText('You must select permissions to proceed')"
-                      ]
-                    },
-                    "location": {
-                      "file": "C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts",
-                      "column": 32,
-                      "line": 76
-                    }
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts",
-                        "column": 32,
-                        "line": 76
-                      },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('You must select permissions to proceed')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 120000ms\u001b[22m\n\u001b[2m  - waiting for getByText('You must select permissions to proceed')\u001b[22m\n\n\u001b[2m    at C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts:76:32\u001b[22m"
-                    },
-                    {
-                      "message": "Error: ENOENT: no such file or directory, open 'C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts'"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "Clicked the \"Next\" button after entering password.\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-18T13:44:50.241Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\eyo\\Documents\\Playwright_framework\\test-results\\checkboxNotCheckedTest-Negative-Test---Checkbox-Not-Checked-Chrome\\test-failed-1.png"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts",
-                    "column": 32,
-                    "line": 76
-                  }
-                },
-                {
-                  "workerIndex": -1,
-                  "parallelIndex": -1,
-                  "status": "failed",
-                  "duration": 0,
-                  "error": {
-                    "message": "Error: Cannot find module 'C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts'\nRequire stack:\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\transform\\transform.js\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\common\\esmLoaderHost.js\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\common\\process.js",
-                    "stack": "Error: Cannot find module 'C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts'\nRequire stack:\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\transform\\transform.js\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\common\\esmLoaderHost.js\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\common\\process.js"
-                  },
-                  "errors": [
-                    {
-                      "message": "Error: Cannot find module 'C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\checkboxNotCheckedTest.spec.ts'\nRequire stack:\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\transform\\transform.js\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\common\\esmLoaderHost.js\n- C:\\Users\\eyo\\Documents\\Playwright_framework\\node_modules\\playwright\\lib\\common\\process.js"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 24889,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
-                  "retry": 1,
-                  "startTime": "2025-03-18T13:46:11.960Z",
+                  "retry": 0,
+                  "startTime": "2025-03-19T12:02:14.907Z",
                   "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "25943225ca55475b31d5-b56c30f54c1fe394b601",
-          "file": "checkboxNotCheckedTest.spec.ts",
-          "line": 42,
+          "id": "dba08353306a4a932973-23055d5215baf29c5979",
+          "file": "02_invalidGoogleEmailTest.spec.ts",
+          "line": 9,
           "column": 5
         }
       ]
@@ -179,11 +112,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-18T13:44:49.067Z",
-    "duration": 82923.77799999999,
-    "expected": 0,
+    "startTime": "2025-03-19T12:02:11.824Z",
+    "duration": 29655.900999999998,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

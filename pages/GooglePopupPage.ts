@@ -31,7 +31,6 @@ export default class GooglePopupPage extends BasePage {
         await this.page.waitForLoadState('networkidle');
         await this.page.locator(this.emailInput).fill(email);
         await this.page.locator(this.nextButton).click();
-
         const errorMessage = await this.page.getByText(this.emailErrorMessage);
         await expect(errorMessage).toBeVisible();
         await expect(errorMessage).toHaveText('Couldn’t find your Google Account');
@@ -42,8 +41,14 @@ export default class GooglePopupPage extends BasePage {
             await this.page.locator(this.selectAllCheckbox).waitFor({ state: 'visible', timeout: 30000 });
             await this.page.locator(this.selectAllCheckbox).check();
             await expect(this.page.locator(this.selectAllCheckbox)).toBeChecked();
-        } catch (error) {
             await this.page.locator(this.continueButton).click();
+        } catch (error) {
+            const isContinueButtonEnabled = await this.page.locator(this.continueButton).isEnabled();
+            if (isContinueButtonEnabled) {
+                await this.page.locator(this.continueButton).click();
+            } else {
+                throw new Error('Continue button is not enabled, cannot proceed.');
+            }
         }
     }
 

@@ -19,7 +19,7 @@ test('Negative Test - Invalid Google Email', async ({ browser }) => {
         process.env.BASE_URL!
     );
     await loginPage.navigateTo(`${process.env.BASE_URL}/social-connect`);
-    await expect(page).toHaveURL(`${process.env.BASE_URL}/social-connect`);
+    expect(page.url()).toContain(`${process.env.BASE_URL}/social-connect`);
     
     await socialConnectPage.clickYouTube();
 

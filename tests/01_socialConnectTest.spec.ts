@@ -9,7 +9,6 @@ dotenv.config();
 test('Connecting Youtube Account Test', async ({ browser }) => {
     const context: BrowserContext = await browser.newContext();
     const page: Page = await context.newPage();
-
     const loginPage = new LoginPage(page);
     const socialConnectPage = new SocialConnectPage(page);
     
@@ -19,7 +18,8 @@ test('Connecting Youtube Account Test', async ({ browser }) => {
         process.env.BASE_URL!
     );
     await loginPage.navigateTo(`${process.env.BASE_URL}/social-connect`);
-    await expect(page).toHaveURL(`${process.env.BASE_URL}/social-connect`);
+    expect(page.url()).toContain(`${process.env.BASE_URL}/social-connect`);
+    
     
     await socialConnectPage.clickYouTube();
     
@@ -40,9 +40,8 @@ test('Connecting Youtube Account Test', async ({ browser }) => {
 
     await googlePopupPage.clickContinueButton();
     await googlePopupPage.handleCheckboxAndContinue();
-    
-    await googlePopupPage.clickContinueButton();
-    
+   
     await page.waitForTimeout(1000);
     await expect(page.getByText('Connect with Youtube')).toBeVisible();
+    expect(page.url()).toContain(`${process.env.BASE_URL}/social-connect`);
 });

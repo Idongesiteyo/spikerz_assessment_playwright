@@ -4,7 +4,7 @@ const config: PlaywrightTestConfig = {
   testDir: './tests',
   timeout: 120000,
   retries: process.env.CI ? 1 : 1,
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? 1 : 1,
   fullyParallel: false,
   reporter: [
     ['list'],
