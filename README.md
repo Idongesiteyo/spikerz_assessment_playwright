@@ -31,7 +31,7 @@ This repository contains a Playwright-based test automation framework implemente
 ## Installation steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/QAeyo/NNPC_Playwright_framework.git
+   git clone https://github.com/Idongesiteyo/spikerz_assessment_playwright.git
    cd playwright-framework
 2. Install dependencies:
   npm install
