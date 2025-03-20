@@ -69,6 +69,54 @@
   },
   "suites": [
     {
+      "title": "01_denyPermission.spec.ts",
+      "file": "01_denyPermission.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Negative Test - Checkbox Not Checked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Chrome",
+              "projectName": "Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 42122,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Clicked the \"Next\" button after entering password.\n"
+                    },
+                    {
+                      "text": "Clicked the \"Cancel\" button.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-20T16:18:52.085Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "613ca2db8503410c8f84-44b93f56cb12f1de4944",
+          "file": "01_denyPermission.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
       "title": "02_invalidGoogleEmailTest.spec.ts",
       "file": "02_invalidGoogleEmailTest.spec.ts",
       "column": 0,
@@ -90,12 +138,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 24889,
+                  "duration": 32074,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-19T12:02:14.907Z",
+                  "startTime": "2025-03-20T16:19:36.131Z",
                   "attachments": []
                 }
               ],
@@ -108,13 +156,154 @@
           "column": 5
         }
       ]
+    },
+    {
+      "title": "03_invalidGooglePasswordTest.spec.ts",
+      "file": "03_invalidGooglePasswordTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Negative Test - Invalid Google Password",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Chrome",
+              "projectName": "Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 35878,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Clicked the \"Next\" button after entering password.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-20T16:20:08.236Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a950df7cbd04d47395df-ae05ff6f54413d644f5e",
+          "file": "03_invalidGooglePasswordTest.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "04_urlRedirectFailsTest.spec.ts",
+      "file": "04_urlRedirectFailsTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Negative Test - Failed URL Redirect",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Chrome",
+              "projectName": "Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 44929,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Clicked the \"Next\" button after entering password.\n"
+                    },
+                    {
+                      "text": "Checked \"Select All\" and clicked \"Continue\".\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-20T16:20:44.172Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "21c59d2f7ca014cd7b14-c7560da506443ccabae4",
+          "file": "04_urlRedirectFailsTest.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "05_socialConnectTest.spec.ts",
+      "file": "05_socialConnectTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Connecting Youtube Account Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Chrome",
+              "projectName": "Chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 52042,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Clicked the \"Next\" button after entering password.\n"
+                    },
+                    {
+                      "text": "Checked \"Select All\" and clicked \"Continue\".\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-20T16:21:29.142Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "275259886f20a344583e-f7b5dac281ffd5258905",
+          "file": "05_socialConnectTest.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-19T12:02:11.824Z",
-    "duration": 29655.900999999998,
-    "expected": 1,
+    "startTime": "2025-03-20T16:18:48.739Z",
+    "duration": 217036.564,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

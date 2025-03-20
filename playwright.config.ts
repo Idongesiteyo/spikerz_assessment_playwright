@@ -17,10 +17,12 @@ const config: PlaywrightTestConfig = {
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'on-first-retry',
+    actionTimeout: 90000,
+    navigationTimeout: 90000,
   },
 
   expect: {
-    timeout: 120000,
+    timeout: 60000,
   },
 
   projects: [
