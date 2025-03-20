@@ -9,6 +9,7 @@
     "test:headed": "npx playwright test --headed",
     "test:happy": "npx playwright test tests/05_socialConnectTest.spec.ts --headed",
     "test:ci": "node clean-test-results.ts && npx playwright test",
+    "test:ci:headed": "xvfb-run --auto-servernum --server-args='-screen 0 1920x1080x24' npx playwright test --headed",
     "allure:generate": "allure generate allure-results --clean -o allure-report",
     "allure:open": "allure open allure-report",
     "report": "npx playwright show-report"
