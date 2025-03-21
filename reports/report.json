@@ -90,7 +90,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 42122,
+                  "duration": 32203,
                   "errors": [],
                   "stdout": [
                     {
@@ -102,7 +102,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-20T16:18:52.085Z",
+                  "startTime": "2025-03-21T15:15:34.845Z",
                   "attachments": []
                 }
               ],
@@ -138,12 +138,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 32074,
+                  "duration": 23830,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-20T16:19:36.131Z",
+                  "startTime": "2025-03-21T15:16:08.203Z",
                   "attachments": []
                 }
               ],
@@ -179,7 +179,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 35878,
+                  "duration": 29087,
                   "errors": [],
                   "stdout": [
                     {
@@ -188,7 +188,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-20T16:20:08.236Z",
+                  "startTime": "2025-03-21T15:16:32.063Z",
                   "attachments": []
                 }
               ],
@@ -224,19 +224,26 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 44929,
+                  "duration": 104237,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "Clicked the \"Next\" button after entering password.\n"
                     },
                     {
-                      "text": "Checked \"Select All\" and clicked \"Continue\".\n"
+                      "text": "\"Spikerz already has some\" text is visible.\n"
+                    },
+                    {
+                      "text": "Clicked \"Continue\" on permission screen.\n"
                     }
                   ],
-                  "stderr": [],
+                  "stderr": [
+                    {
+                      "text": "Select All checkbox not visible, checking other conditions.\n"
+                    }
+                  ],
                   "retry": 0,
-                  "startTime": "2025-03-20T16:20:44.172Z",
+                  "startTime": "2025-03-21T15:17:01.187Z",
                   "attachments": []
                 }
               ],
@@ -272,7 +279,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 52042,
+                  "duration": 38678,
                   "errors": [],
                   "stdout": [
                     {
@@ -284,7 +291,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-20T16:21:29.142Z",
+                  "startTime": "2025-03-21T15:18:45.520Z",
                   "attachments": []
                 }
               ],
@@ -301,8 +308,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-20T16:18:48.739Z",
-    "duration": 217036.564,
+    "startTime": "2025-03-21T15:15:30.022Z",
+    "duration": 237941.567,
     "expected": 5,
     "skipped": 0,
     "unexpected": 0,

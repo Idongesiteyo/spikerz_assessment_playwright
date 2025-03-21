@@ -17,4 +17,3 @@ export default class LoginPage extends BasePage {
         await this.page.click(this.googleSignInButton);
     }
 }
-
