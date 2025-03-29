@@ -1,5 +1,5 @@
 import { Page, expect } from '@playwright/test';
-import BasePage from './BasePage';
+import {BasePage} from './BasePage';
 
 export default class SocialConnectPage extends BasePage {
     private readonly youtubeButtonText = 'Youtube'; 

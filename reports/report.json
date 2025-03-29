@@ -89,24 +89,47 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 32203,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Clicked the \"Next\" button after entering password.\n"
+                  "status": "interrupted",
+                  "duration": 29303,
+                  "error": {
+                    "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\"password\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input class=\"hJIRO\" tabindex=\"-1\" type=\"password\" jsname=\"RHeR4d\" aria-hidden=\"true\" spellcheck=\"false\" name=\"hiddenPassword\"/>\u001b[22m\n\u001b[2m    - fill(\"Mass@4AM\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    7 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+                    "stack": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\"password\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input class=\"hJIRO\" tabindex=\"-1\" type=\"password\" jsname=\"RHeR4d\" aria-hidden=\"true\" spellcheck=\"false\" name=\"hiddenPassword\"/>\u001b[22m\n\u001b[2m    - fill(\"Mass@4AM\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    7 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\n    at GooglePopupPage.loginToGoogle (C:\\Users\\eyo\\Documents\\Playwright_framework\\pages\\GooglePopupPage.ts:26:53)\n    at C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\01_denyPermission.spec.ts:36:5",
+                    "location": {
+                      "file": "C:\\Users\\eyo\\Documents\\Playwright_framework\\pages\\GooglePopupPage.ts",
+                      "column": 53,
+                      "line": 26
                     },
+                    "snippet": "\u001b[90m   at \u001b[39m..\\pages\\GooglePopupPage.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memailInput))\u001b[33m.\u001b[39mtoHaveValue(email)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput)\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput))\u001b[33m.\u001b[39mtoHaveValue(password)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'Clicked the \"Next\" button after entering password.'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m         \u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "text": "Clicked the \"Cancel\" button.\n"
+                      "location": {
+                        "file": "C:\\Users\\eyo\\Documents\\Playwright_framework\\pages\\GooglePopupPage.ts",
+                        "column": 53,
+                        "line": 26
+                      },
+                      "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('input[type=\"password\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input class=\"hJIRO\" tabindex=\"-1\" type=\"password\" jsname=\"RHeR4d\" aria-hidden=\"true\" spellcheck=\"false\" name=\"hiddenPassword\"/>\u001b[22m\n\u001b[2m    - fill(\"Mass@4AM\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    7 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\GooglePopupPage.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memailInput))\u001b[33m.\u001b[39mtoHaveValue(email)\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mnextButton)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput)\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput))\u001b[33m.\u001b[39mtoHaveValue(password)\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'Clicked the \"Next\" button after entering password.'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m         \u001b[0m\n\u001b[2m    at GooglePopupPage.loginToGoogle (C:\\Users\\eyo\\Documents\\Playwright_framework\\pages\\GooglePopupPage.ts:26:53)\u001b[22m\n\u001b[2m    at C:\\Users\\eyo\\Documents\\Playwright_framework\\tests\\01_denyPermission.spec.ts:36:5\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-03-21T15:15:34.845Z",
-                  "attachments": []
+                  "startTime": "2025-03-29T18:33:26.797Z",
+                  "attachments": [
+                    {
+                      "name": "_prompt-0",
+                      "contentType": "text/markdown",
+                      "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBOZWdhdGl2ZSBUZXN0IC0gQ2hlY2tib3ggTm90IENoZWNrZWQKLSBMb2NhdGlvbjogQzpcVXNlcnNcZXlvXERvY3VtZW50c1xQbGF5d3JpZ2h0X2ZyYW1ld29ya1x0ZXN0c1wwMV9kZW55UGVybWlzc2lvbi5zcGVjLnRzOjk6NQoKIyBFcnJvciBkZXRhaWxzCgpgYGAKRXJyb3I6IGxvY2F0b3IuZmlsbDogVGFyZ2V0IHBhZ2UsIGNvbnRleHQgb3IgYnJvd3NlciBoYXMgYmVlbiBjbG9zZWQKQ2FsbCBsb2c6CiAgLSB3YWl0aW5nIGZvciBsb2NhdG9yKCdpbnB1dFt0eXBlPSJwYXNzd29yZCJdJykKICAgIC0gbG9jYXRvciByZXNvbHZlZCB0byA8aW5wdXQgY2xhc3M9ImhKSVJPIiB0YWJpbmRleD0iLTEiIHR5cGU9InBhc3N3b3JkIiBqc25hbWU9IlJIZVI0ZCIgYXJpYS1oaWRkZW49InRydWUiIHNwZWxsY2hlY2s9ImZhbHNlIiBuYW1lPSJoaWRkZW5QYXNzd29yZCIvPgogICAgLSBmaWxsKCJNYXNzQDRBTSIpCiAgLSBhdHRlbXB0aW5nIGZpbGwgYWN0aW9uCiAgICAyIMOXIHdhaXRpbmcgZm9yIGVsZW1lbnQgdG8gYmUgdmlzaWJsZSwgZW5hYmxlZCBhbmQgZWRpdGFibGUKICAgICAgLSBlbGVtZW50IGlzIG5vdCB2aXNpYmxlCiAgICAtIHJldHJ5aW5nIGZpbGwgYWN0aW9uCiAgICAtIHdhaXRpbmcgMjBtcwogICAgMiDDlyB3YWl0aW5nIGZvciBlbGVtZW50IHRvIGJlIHZpc2libGUsIGVuYWJsZWQgYW5kIGVkaXRhYmxlCiAgICAgIC0gZWxlbWVudCBpcyBub3QgdmlzaWJsZQogICAgLSByZXRyeWluZyBmaWxsIGFjdGlvbgogICAgICAtIHdhaXRpbmcgMTAwbXMKICAgIDcgw5cgd2FpdGluZyBmb3IgZWxlbWVudCB0byBiZSB2aXNpYmxlLCBlbmFibGVkIGFuZCBlZGl0YWJsZQogICAgICAtIGVsZW1lbnQgaXMgbm90IHZpc2libGUKICAgIC0gcmV0cnlpbmcgZmlsbCBhY3Rpb24KICAgICAgLSB3YWl0aW5nIDUwMG1zCgogICAgYXQgR29vZ2xlUG9wdXBQYWdlLmxvZ2luVG9Hb29nbGUgKEM6XFVzZXJzXGV5b1xEb2N1bWVudHNcUGxheXdyaWdodF9mcmFtZXdvcmtccGFnZXNcR29vZ2xlUG9wdXBQYWdlLnRzOjI2OjUzKQogICAgYXQgQzpcVXNlcnNcZXlvXERvY3VtZW50c1xQbGF5d3JpZ2h0X2ZyYW1ld29ya1x0ZXN0c1wwMV9kZW55UGVybWlzc2lvbi5zcGVjLnRzOjM2OjUKYGBgCgojIFRlc3Qgc291cmNlCgpgYGB0cwogICAxIHwgaW1wb3J0IHsgUGFnZSwgZXhwZWN0IH0gZnJvbSAnQHBsYXl3cmlnaHQvdGVzdCc7CiAgIDIgfCBpbXBvcnQge0Jhc2VQYWdlfSBmcm9tICcuL0Jhc2VQYWdlJzsKICAgMyB8CiAgIDQgfCBleHBvcnQgZGVmYXVsdCBjbGFzcyBHb29nbGVQb3B1cFBhZ2UgZXh0ZW5kcyBCYXNlUGFnZSB7CiAgIDUgfCAgICAgcHJpdmF0ZSByZWFkb25seSBjb250aW51ZUJ1dHRvbiA9ICdidXR0b246aGFzLXRleHQoIkNvbnRpbnVlIiknOwogICA2IHwgICAgIHByaXZhdGUgcmVhZG9ubHkgc2VsZWN0QWxsQ2hlY2tib3ggPSAncm9sZT1jaGVja2JveFtuYW1lPSJTZWxlY3QgYWxsIl0nOwogICA3IHwgICAgIHByaXZhdGUgcmVhZG9ubHkgZW1haWxJbnB1dCA9ICdpbnB1dFt0eXBlPSJlbWFpbCJdJzsKICAgOCB8ICAgICBwcml2YXRlIHJlYWRvbmx5IHBhc3N3b3JkSW5wdXQgPSAnaW5wdXRbdHlwZT0icGFzc3dvcmQiXSc7CiAgIDkgfCAgICAgcHJpdmF0ZSByZWFkb25seSBuZXh0QnV0dG9uID0gJ2J1dHRvbjpoYXMtdGV4dCgiTmV4dCIpJzsKICAgMTAgfCAgICAgcHJpdmF0ZSByZWFkb25seSBzcGlrZXJ6QWNjZXNzVGV4dCA9ICdTcGlrZXJ6IGFscmVhZHkgaGFzIHNvbWUgYWNjZXNzJzsgCiAgIDExIHwgICAgIHByaXZhdGUgcmVhZG9ubHkgYmFrZXJ5U2hvcFRleHQgPSAnZGluYV9iYWtlcnlfc2hvcCc7CiAgIDEyIHwgICAgIHByaXZhdGUgcmVhZG9ubHkgZW1haWxFcnJvck1lc3NhZ2UgPSAnQ291bGRu4oCZdCBmaW5kIHlvdXIgR29vZ2xlIEFjY291bnQnOwogICAxMyB8ICAgICBwcml2YXRlIHJlYWRvbmx5IGNhbmNlbEJ1dHRvbiA9ICdidXR0b246aGFzLXRleHQoIkNhbmNlbCIpJzsKICAgMTQgfCAgICAgcHJpdmF0ZSByZWFkb25seSBjb25maXJtYXRpb25IZWFkZXIgPSAnaDUnOwogICAxNSB8ICAgICBwcml2YXRlIHJlYWRvbmx5IGJha2VyeUNhcmQgPSAnbnotY2FyZCc7CiAgIDE2IHwKICAgMTcgfCAgICAgY29uc3RydWN0b3IocGFnZTogUGFnZSkgewogICAxOCB8ICAgICAgICAgc3VwZXIocGFnZSk7CiAgIDE5IHwgICAgIH0KICAgMjAgfAogICAyMSB8ICAgICBhc3luYyBsb2dpblRvR29vZ2xlKGVtYWlsOiBzdHJpbmcsIHBhc3N3b3JkOiBzdHJpbmcpOiBQcm9taXNlPHZvaWQ+IHsKICAgMjIgfCAgICAgICAgIGF3YWl0IHRoaXMucGFnZS53YWl0Rm9yTG9hZFN0YXRlKCduZXR3b3JraWRsZScpOwogICAyMyB8ICAgICAgICAgYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IodGhpcy5lbWFpbElucHV0KS5maWxsKGVtYWlsKTsKICAgMjQgfCAgICAgICAgIGF3YWl0IGV4cGVjdCh0aGlzLnBhZ2UubG9jYXRvcih0aGlzLmVtYWlsSW5wdXQpKS50b0hhdmVWYWx1ZShlbWFpbCk7CiAgIDI1IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcih0aGlzLm5leHRCdXR0b24pLmNsaWNrKCk7Cj4gIDI2IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcih0aGlzLnBhc3N3b3JkSW5wdXQpLmZpbGwocGFzc3dvcmQpOwogICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeIEVycm9yOiBsb2NhdG9yLmZpbGw6IFRhcmdldCBwYWdlLCBjb250ZXh0IG9yIGJyb3dzZXIgaGFzIGJlZW4gY2xvc2VkCiAgIDI3IHwgICAgICAgICBhd2FpdCBleHBlY3QodGhpcy5wYWdlLmxvY2F0b3IodGhpcy5wYXNzd29yZElucHV0KSkudG9IYXZlVmFsdWUocGFzc3dvcmQpOwogICAyOCB8ICAgICAgICAgY29uc29sZS5sb2coJ0NsaWNrZWQgdGhlICJOZXh0IiBidXR0b24gYWZ0ZXIgZW50ZXJpbmcgcGFzc3dvcmQuJyk7CiAgIDI5IHwgICAgICAgICAKICAgMzAgfCAgICAgICAgIGF3YWl0IHRoaXMucGFnZS5sb2NhdG9yKHRoaXMubmV4dEJ1dHRvbikuY2xpY2soKTsKICAgMzEgfCAgICAgfQogICAzMiB8CiAgIDMzIHwgICAgIGFzeW5jIGludmFsaWRsb2dpblRvR29vZ2xlKGVtYWlsOiBzdHJpbmcsIHBhc3N3b3JkOiBzdHJpbmcpOiBQcm9taXNlPHZvaWQ+IHsKICAgMzQgfCAgICAgICAgIGF3YWl0IHRoaXMucGFnZS53YWl0Rm9yTG9hZFN0YXRlKCduZXR3b3JraWRsZScpOwogICAzNSB8ICAgICAgICAgYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IodGhpcy5lbWFpbElucHV0KS5maWxsKGVtYWlsKTsKICAgMzYgfCAgICAgICAgIGF3YWl0IHRoaXMucGFnZS5sb2NhdG9yKHRoaXMubmV4dEJ1dHRvbikuY2xpY2soKTsKICAgMzcgfCAgICAgICAgIGNvbnN0IGVycm9yTWVzc2FnZSA9IGF3YWl0IHRoaXMucGFnZS5nZXRCeVRleHQodGhpcy5lbWFpbEVycm9yTWVzc2FnZSk7CiAgIDM4IHwgICAgICAgICBhd2FpdCBleHBlY3QoZXJyb3JNZXNzYWdlKS50b0JlVmlzaWJsZSgpOwogICAzOSB8ICAgICAgICAgYXdhaXQgZXhwZWN0KGVycm9yTWVzc2FnZSkudG9IYXZlVGV4dCgnQ291bGRu4oCZdCBmaW5kIHlvdXIgR29vZ2xlIEFjY291bnQnKTsKICAgNDAgfCAgICAgfQogICA0MSB8ICAgICAKICAgNDIgfCAgICAgCiAgIDQzIHwgICAgIGFzeW5jIGhhbmRsZUNoZWNrYm94QW5kQ29udGludWUoKTogUHJvbWlzZTx2b2lkPiB7CiAgIDQ0IHwgICAgICAgICB0cnkgewogICA0NSB8ICAgICAgICAgICAgIGlmICghdGhpcy5wYWdlLmlzQ2xvc2VkKCkpIHsKICAgNDYgfCAgICAgICAgICAgICAgICAgCiAgIDQ3IHwgICAgICAgICAgICAgICAgIGF3YWl0IHRoaXMucGFnZS5sb2NhdG9yKHRoaXMuc2VsZWN0QWxsQ2hlY2tib3gpLndhaXRGb3IoeyBzdGF0ZTogJ3Zpc2libGUnLCB0aW1lb3V0OiA2MDAwMCB9KTsKICAgNDggfCAgICAgICAgICAgICAgICAgYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IodGhpcy5zZWxlY3RBbGxDaGVja2JveCkuY2hlY2soKTsKICAgNDkgfCAgICAgICAgICAgICAgICAgYXdhaXQgZXhwZWN0KHRoaXMucGFnZS5sb2NhdG9yKHRoaXMuc2VsZWN0QWxsQ2hlY2tib3gpKS50b0JlQ2hlY2tlZCgpOwogICA1MCB8ICAgICAgICAgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcih0aGlzLmNvbnRpbnVlQnV0dG9uKS5jbGljaygpOwogICA1MSB8ICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygnQ2hlY2tlZCAiU2VsZWN0IEFsbCIgYW5kIGNsaWNrZWQgIkNvbnRpbnVlIi4nKTsKICAgNTIgfCAgICAgICAgICAgICB9IGVsc2UgewogICA1MyB8ICAgICAgICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ1BhZ2UgaXMgYWxyZWFkeSBjbG9zZWQuIENhbm5vdCBwcm9jZWVkLicpOwogICA1NCB8ICAgICAgICAgICAgIH0KICAgNTUgfCAgICAgICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgIDU2IHwgICAgICAgICAgICAgY29uc29sZS53YXJuKCdTZWxlY3QgQWxsIGNoZWNrYm94IG5vdCB2aXNpYmxlLCBjaGVja2luZyBvdGhlciBjb25kaXRpb25zLicpOwogICA1NyB8ICAgICAKICAgNTggfCAgICAgICAgICAgICAKICAgNTkgfCAgICAgICAgICAgICBpZiAoIXRoaXMucGFnZS5pc0Nsb3NlZCgpKSB7CiAgIDYwIHwgICAgICAgICAgICAgICAgIGNvbnN0IGlzU3Bpa2VyekFjY2Vzc1RleHRWaXNpYmxlID0gYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IoJ3RleHQ9U3Bpa2VyeiBhbHJlYWR5IGhhcyBzb21lJykuaXNWaXNpYmxlKCk7CiAgIDYxIHwgICAgICAgICAgICAgICAgIGlmIChpc1NwaWtlcnpBY2Nlc3NUZXh0VmlzaWJsZSkgewogICA2MiB8ICAgICAgICAgICAgICAgICAgICAgY29uc29sZS5sb2coJyJTcGlrZXJ6IGFscmVhZHkgaGFzIHNvbWUiIHRleHQgaXMgdmlzaWJsZS4nKTsKICAgNjMgfCAgICAgCiAgIDY0IHwgICAgICAgICAgICAgICAgICAgICBjb25zdCBpc0NvbnRpbnVlQnV0dG9uRW5hYmxlZCA9IGF3YWl0IHRoaXMucGFnZS5sb2NhdG9yKHRoaXMuY29udGludWVCdXR0b24pLmlzRW5hYmxlZCgpOwogICA2NSB8ICAgICAgICAgICAgICAgICAgICAgaWYgKGlzQ29udGludWVCdXR0b25FbmFibGVkKSB7CiAgIDY2IHwgICAgICAgICAgICAgICAgICAgICAgICAgYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IodGhpcy5jb250aW51ZUJ1dHRvbikuY2xpY2soKTsKICAgNjcgfCAgICAgICAgICAgICAgICAgICAgICAgICBjb25zb2xlLmxvZygnQ2xpY2tlZCAiQ29udGludWUiIG9uIHBlcm1pc3Npb24gc2NyZWVuLicpOwogICA2OCB8ICAgICAgICAgICAgICAgICAgICAgfSBlbHNlIHsKICAgNjkgfCAgICAgICAgICAgICAgICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoJ0NvbnRpbnVlIGJ1dHRvbiBpcyBub3QgZW5hYmxlZC4nKTsKICAgNzAgfCAgICAgICAgICAgICAgICAgICAgIH0KICAgNzEgfCAgICAgICAgICAgICAgICAgfSBlbHNlIHsKICAgNzIgfCAgICAgICAgICAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcignTmVpdGhlciBjaGVja2JveCBub3IgIlNwaWtlcnogYWxyZWFkeSBoYXMgc29tZSIgdGV4dCBpcyB2aXNpYmxlLiBDYW5ub3QgcHJvY2VlZC4nKTsKICAgNzMgfCAgICAgICAgICAgICAgICAgfQogICA3NCB8ICAgICAgICAgICAgIH0gZWxzZSB7CiAgIDc1IHwgICAgICAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcignUGFnZSBpcyBjbG9zZWQsIGNhbm5vdCB2ZXJpZnkgdmlzaWJpbGl0eS4nKTsKICAgNzYgfCAgICAgICAgICAgICB9CiAgIDc3IHwgICAgICAgICB9CiAgIDc4IHwgICAgIH0KICAgNzkgfCAgICAgCiAgIDgwIHwgICAgIAogICA4MSB8CiAgIDgyIHwgICAgIGFzeW5jIGNsaWNrQ29udGludWVCdXR0b24oKTogUHJvbWlzZTx2b2lkPiB7CiAgIDgzIHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcih0aGlzLmNvbnRpbnVlQnV0dG9uKS53YWl0Rm9yKHsgc3RhdGU6ICd2aXNpYmxlJyB9KTsKICAgODQgfCAgICAgICAgIGF3YWl0IHRoaXMucGFnZS5sb2NhdG9yKHRoaXMuY29udGludWVCdXR0b24pLmNsaWNrKCk7CiAgIDg1IHwgICAgIH0KICAgODYgfAogICA4NyB8ICAgICBhc3luYyBjaGVja1NlbGVjdEFsbENoZWNrYm94KCk6IFByb21pc2U8dm9pZD4gewogICA4OCB8ICAgICAgICAgYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IodGhpcy5zZWxlY3RBbGxDaGVja2JveCkud2FpdEZvcih7IHN0YXRlOiAndmlzaWJsZScgfSk7CiAgIDg5IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcih0aGlzLnNlbGVjdEFsbENoZWNrYm94KS5jaGVjaygpOwogICA5MCB8ICAgICAgICAgYXdhaXQgZXhwZWN0KHRoaXMucGFnZS5sb2NhdG9yKHRoaXMuc2VsZWN0QWxsQ2hlY2tib3gpKS50b0JlQ2hlY2tlZCgpOwogICA5MSB8ICAgICB9CiAgIDkyIHwKICAgOTMgfCAgICAgYXN5bmMgY2xpY2tDYW5jZWxCdXR0b24oKTogUHJvbWlzZTx2b2lkPiB7CiAgIDk0IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcih0aGlzLmNhbmNlbEJ1dHRvbikud2FpdEZvcih7IHN0YXRlOiAndmlzaWJsZScgfSk7CiAgIDk1IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcih0aGlzLmNhbmNlbEJ1dHRvbikuY2xpY2soKTsKICAgOTYgfCAgICAgICAgIGNvbnNvbGUubG9nKCdDbGlja2VkIHRoZSAiQ2FuY2VsIiBidXR0b24uJyk7CiAgIDk3IHwgICAgIH0KICAgOTggfAogICA5OSB8ICAgICBhc3luYyB2ZXJpZnlCYWtlcnlTaG9wVmlzaWJsZSgpOiBQcm9taXNlPHZvaWQ+IHsKICAxMDAgfCAgICAgICAgIGF3YWl0IGV4cGVjdCh0aGlzLnBhZ2UubG9jYXRvcih0aGlzLmJha2VyeUNhcmQpKS50b0NvbnRhaW5UZXh0KHRoaXMuYmFrZXJ5U2hvcFRleHQpOwogIDEwMSB8ICAgICAgICAgYXdhaXQgZXhwZWN0KHRoaXMucGFnZS5nZXRCeVRleHQodGhpcy5iYWtlcnlTaG9wVGV4dCkpLnRvQmVWaXNpYmxlKCk7CiAgMTAyIHwgICAgIH0KICAxMDMgfAogIDEwNCB8ICAgICBhc3luYyB2ZXJpZnlVcmwoKTogUHJvbWlzZTx2b2lkPiB7CiAgMTA1IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2Uud2FpdEZvclVSTChgJHtwcm9jZXNzLmVudi5CQVNFX1VSTH0vc29jaWFsLWNvbm5lY3QveW91dHViZWAsIHsgdGltZW91dDogMTUwMDAgfSk7CiAgMTA2IHwgICAgICAgICBjb25zdCBjdXJyZW50VXJsID0gdGhpcy5wYWdlLnVybCgpOwogIDEwNyB8ICAgICAgICAgZXhwZWN0KGN1cnJlbnRVcmwpLnRvQ29udGFpbignc29jaWFsLWNvbm5lY3QnKTsKICAxMDggfCAgICAgfQogIDEwOSB8IH0KYGBg"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\eyo\\Documents\\Playwright_framework\\pages\\GooglePopupPage.ts",
+                    "column": 53,
+                    "line": 26
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "skipped"
             }
           ],
           "id": "613ca2db8503410c8f84-44b93f56cb12f1de4944",
@@ -133,21 +156,8 @@
               "expectedStatus": "passed",
               "projectId": "Chrome",
               "projectName": "Chrome",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 23830,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-21T15:16:08.203Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "dba08353306a4a932973-23055d5215baf29c5979",
@@ -174,25 +184,8 @@
               "expectedStatus": "passed",
               "projectId": "Chrome",
               "projectName": "Chrome",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 29087,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Clicked the \"Next\" button after entering password.\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-21T15:16:32.063Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "a950df7cbd04d47395df-ae05ff6f54413d644f5e",
@@ -219,35 +212,8 @@
               "expectedStatus": "passed",
               "projectId": "Chrome",
               "projectName": "Chrome",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 104237,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Clicked the \"Next\" button after entering password.\n"
-                    },
-                    {
-                      "text": "\"Spikerz already has some\" text is visible.\n"
-                    },
-                    {
-                      "text": "Clicked \"Continue\" on permission screen.\n"
-                    }
-                  ],
-                  "stderr": [
-                    {
-                      "text": "Select All checkbox not visible, checking other conditions.\n"
-                    }
-                  ],
-                  "retry": 0,
-                  "startTime": "2025-03-21T15:17:01.187Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "21c59d2f7ca014cd7b14-c7560da506443ccabae4",
@@ -274,28 +240,8 @@
               "expectedStatus": "passed",
               "projectId": "Chrome",
               "projectName": "Chrome",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 38678,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Clicked the \"Next\" button after entering password.\n"
-                    },
-                    {
-                      "text": "Checked \"Select All\" and clicked \"Continue\".\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-03-21T15:18:45.520Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
+              "results": [],
+              "status": "skipped"
             }
           ],
           "id": "275259886f20a344583e-f7b5dac281ffd5258905",
@@ -308,10 +254,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-03-21T15:15:30.022Z",
-    "duration": 237941.567,
-    "expected": 5,
-    "skipped": 0,
+    "startTime": "2025-03-29T18:33:25.344Z",
+    "duration": 38992.479999999996,
+    "expected": 0,
+    "skipped": 5,
     "unexpected": 0,
     "flaky": 0
   }

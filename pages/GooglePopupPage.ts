@@ -1,5 +1,5 @@
 import { Page, expect } from '@playwright/test';
-import BasePage from './BasePage';
+import {BasePage} from './BasePage';
 
 export default class GooglePopupPage extends BasePage {
     private readonly continueButton = 'button:has-text("Continue")';

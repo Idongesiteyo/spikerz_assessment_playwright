@@ -95,4 +95,3 @@ This repository contains a Playwright-based test automation framework implemente
    Regularly Update Dependencies: Keep your project dependencies up-to-date to ensure compatibility with Playwright and other tools.
    Continuous Integration: Integrate with CI tools to automate the execution of tests on each code push.
 
-   
