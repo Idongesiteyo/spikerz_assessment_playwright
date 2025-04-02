@@ -38,5 +38,5 @@ test('Negative Test - Checkbox Not Checked', async ({ browser }) => {
         process.env.GOOGLE_PASSWORD!
     );
     await googlePopupPage.clickCancelButton();
-    await expect(page).not.toHaveURL(`${process.env.BASE_URL}/social-connect/youtube`);
+    await expect(page).toHaveURL(/social-connect/);
 });

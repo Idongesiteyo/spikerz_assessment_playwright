@@ -1,11 +1,12 @@
 import express, { Request, Response } from "express";
 import { exec } from "child_process";
+import  logger  from './utils/logger';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  logger.info(`Server running on port ${PORT}`);
 });
 
 app.get("/", (_, res) => {
@@ -13,20 +14,21 @@ app.get("/", (_, res) => {
 });
 
 app.post("/run-automation", (req: Request, res: Response) => {
-  console.log("Test execution started...");
+  logger.info("Test execution started...");
+  
 
-  exec("npx playwright test", (error, stdout, stderr) => {
+  exec("npx playwright test", { env: { ...process.env, PATH: process.env.PATH } }, (error, stdout, stderr) => {
     if (error) {
-      console.error(`Error: ${error.message}`);
+      logger.error(`Error: ${error.message}`);
       res.status(500).send({ message: "Test execution failed", error: error.message });
       return;
     }
     if (stderr) {
-      console.error(`stderr: ${stderr}`);
+      logger.error(`stderr: ${stderr}`);
       res.status(500).send({ message: "Test execution failed", error: stderr });
       return;
     }
-    console.log(`stdout: ${stdout}`);
+    logger.info(`stdout: ${stdout}`);
     res.status(200).send({ message: "Test execution started", output: stdout });
   });
 });

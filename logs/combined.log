@@ -1,0 +1,294 @@
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T14:47:02.413Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T14:47:02.418Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T14:47:05.042Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T14:47:10.382Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-01T14:47:32.851Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-01T14:47:43.189Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T14:47:48.917Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T14:47:48.917Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T14:47:50.645Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T14:47:55.367Z"}
+{"level":"info","message":"Verified invalid Google login error message","timestamp":"2025-04-01T14:48:09.512Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T14:48:15.091Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T14:48:15.093Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T14:48:16.830Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T14:48:22.523Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-01T14:48:39.831Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T14:48:45.973Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T14:48:45.973Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T14:48:48.020Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T14:48:53.206Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-01T14:49:06.934Z"}
+{"level":"warn","message":"Select All checkbox not visible, checking other conditions.","timestamp":"2025-04-01T14:50:14.852Z"}
+{"level":"info","message":"\"Spikerz already has some\" text is visible.","timestamp":"2025-04-01T14:50:14.891Z"}
+{"level":"info","message":"Clicked \"Continue\" on permission screen.","timestamp":"2025-04-01T14:50:15.102Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T14:50:20.917Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T14:50:20.918Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T14:50:22.868Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T14:50:27.773Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-01T14:50:43.751Z"}
+{"level":"info","message":"Checked \"Select All\" and clicked \"Continue\".","timestamp":"2025-04-01T14:50:56.351Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T23:02:21.263Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T23:02:21.266Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T23:02:23.264Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T23:02:27.332Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-01T23:04:36.248Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T23:04:44.449Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T23:04:44.454Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T23:04:46.263Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T23:04:50.857Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-01T23:06:55.742Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T23:07:15.483Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T23:07:15.486Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T23:07:17.292Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T23:07:21.806Z"}
+{"error":{"matcherResult":{"actual":"<element(s) not found>","expected":"visible","log":["  - expect.toBeVisible with timeout 90000ms","  - waiting for getByText('Couldn’t find your Google Account')"],"message":"\u001b[31mTimed out 90000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Couldn’t find your Google Account')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 90000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Couldn’t find your Google Account')\u001b[22m\n","name":"toBeVisible","pass":false,"timeout":90000},"name":"Error"},"level":"error","message":"Invalid Google login verification failed","timestamp":"2025-04-01T23:08:58.324Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T23:09:06.606Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T23:09:06.610Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T23:09:08.486Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T23:09:12.813Z"}
+{"error":{"matcherResult":{"actual":"<element(s) not found>","expected":"visible","log":["  - expect.toBeVisible with timeout 90000ms","  - waiting for getByText('Couldn’t find your Google Account')"],"message":"\u001b[31mTimed out 90000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Couldn’t find your Google Account')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 90000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Couldn’t find your Google Account')\u001b[22m\n","name":"toBeVisible","pass":false,"timeout":90000},"name":"Error"},"level":"error","message":"Invalid Google login verification failed","timestamp":"2025-04-01T23:10:48.937Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T23:11:08.601Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T23:11:08.607Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T23:11:10.491Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T23:11:15.225Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-01T23:13:21.158Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T23:13:29.307Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T23:13:29.310Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T23:13:31.205Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T23:13:35.544Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-01T23:15:41.861Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-01T23:16:02.478Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-01T23:16:02.483Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-01T23:16:04.158Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-01T23:16:10.358Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-01T23:18:15.803Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T00:53:07.103Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T00:53:07.105Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T00:53:08.654Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T00:53:11.918Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-02T00:55:17.229Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T00:55:23.496Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T00:55:23.499Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T00:55:25.033Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T00:55:28.185Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-02T00:57:33.734Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T00:57:45.152Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T00:57:45.155Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T00:57:46.450Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T00:57:49.718Z"}
+{"error":{"matcherResult":{"actual":"<element(s) not found>","expected":"visible","log":["  - expect.toBeVisible with timeout 90000ms","  - waiting for getByText('Couldn’t find your Google Account')"],"message":"\u001b[31mTimed out 90000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Couldn’t find your Google Account')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 90000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Couldn’t find your Google Account')\u001b[22m\n","name":"toBeVisible","pass":false,"timeout":90000},"name":"Error"},"level":"error","message":"Invalid Google login verification failed","timestamp":"2025-04-02T00:59:24.822Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T00:59:30.820Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T00:59:30.823Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T00:59:32.326Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T00:59:35.955Z"}
+{"error":{"matcherResult":{"actual":"<element(s) not found>","expected":"visible","log":["  - expect.toBeVisible with timeout 90000ms","  - waiting for getByText('Couldn’t find your Google Account')"],"message":"\u001b[31mTimed out 90000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Couldn’t find your Google Account')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 90000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Couldn’t find your Google Account')\u001b[22m\n","name":"toBeVisible","pass":false,"timeout":90000},"name":"Error"},"level":"error","message":"Invalid Google login verification failed","timestamp":"2025-04-02T01:01:10.613Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T01:01:22.133Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T01:01:22.136Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T01:01:23.720Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T01:01:27.103Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-02T01:03:31.813Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T01:03:38.182Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T01:03:38.185Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T01:03:39.814Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T01:03:43.188Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-02T01:05:47.625Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T01:05:58.911Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T01:05:58.914Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T01:06:00.013Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T01:06:03.626Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-02T01:08:08.070Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T01:08:14.281Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T01:08:14.284Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T01:08:15.500Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T01:08:18.816Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-02T01:10:23.455Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T01:10:34.672Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T01:10:34.676Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T01:10:36.312Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T01:10:39.581Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-02T01:12:43.727Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T01:12:49.899Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T01:12:49.901Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T01:12:51.395Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T01:12:54.973Z"}
+{"error":{"name":"TimeoutError"},"level":"error","message":"Google login failed","timestamp":"2025-04-02T01:14:59.515Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:23:12.338Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:23:12.344Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:23:14.389Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:23:23.141Z"}
+{"error":{},"level":"error","message":"Google login failed","timestamp":"2025-04-02T07:25:10.468Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:26:41.301Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:26:41.306Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:26:43.049Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:26:49.548Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:27:13.998Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T07:27:24.161Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:29:08.462Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:29:08.468Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:29:59.387Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:29:59.395Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:30:01.450Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:30:09.218Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:30:20.822Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T07:30:27.652Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:32:04.517Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:32:04.539Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:32:07.734Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:32:16.328Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:32:29.067Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T07:32:38.727Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:34:16.548Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:34:16.554Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:34:18.790Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:34:23.874Z"}
+{"level":"info","message":"Verified invalid Google login error message","timestamp":"2025-04-02T07:34:32.293Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:34:36.953Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:34:36.953Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:34:38.870Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:34:44.138Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:34:54.639Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:35:00.275Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:35:00.276Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:35:02.457Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:35:10.245Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:35:21.278Z"}
+{"level":"info","message":"Checked \"Select All\" and clicked \"Continue\".","timestamp":"2025-04-02T07:35:32.310Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:35:38.202Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:35:38.202Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:35:40.143Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:35:46.371Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:36:00.503Z"}
+{"level":"info","message":"Checked \"Select All\" and clicked \"Continue\".","timestamp":"2025-04-02T07:36:13.349Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:43:18.739Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:43:18.748Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:43:21.317Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:43:25.921Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:43:36.064Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T07:43:42.986Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:43:47.879Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:43:47.879Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:43:49.119Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:44:17.208Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:44:17.230Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:44:22.876Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:44:32.231Z"}
+{"error":{"matcherResult":{"actual":"<element(s) not found>","expected":"visible","log":["  - expect.toBeVisible with timeout 5000ms","  - waiting for getByText('Couldn’t find your Google Account')"],"message":"\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Couldn’t find your Google Account')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Couldn’t find your Google Account')\u001b[22m\n","name":"toBeVisible","pass":false,"timeout":5000},"name":"Error"},"level":"error","message":"Invalid Google login verification failed","timestamp":"2025-04-02T07:44:46.359Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:45:04.799Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:45:04.806Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:45:06.925Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:45:12.888Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:45:27.463Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:45:32.886Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:45:32.887Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:45:34.633Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:45:39.888Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:45:51.052Z"}
+{"level":"warn","message":"Select All checkbox not visible, checking other conditions.","timestamp":"2025-04-02T07:46:59.266Z"}
+{"level":"info","message":"\"Spikerz already has some\" text is visible.","timestamp":"2025-04-02T07:46:59.289Z"}
+{"level":"info","message":"Clicked \"Continue\" on permission screen.","timestamp":"2025-04-02T07:46:59.417Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:47:05.475Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:47:05.475Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:47:07.577Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T07:47:30.328Z"}
+{"level":"info","message":"Acsessing baseURL","timestamp":"2025-04-02T07:47:30.346Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T07:47:34.743Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T07:47:45.326Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T07:48:05.382Z"}
+{"level":"info","message":"Checked \"Select All\" and clicked \"Continue\".","timestamp":"2025-04-02T07:48:17.874Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:23:17.810Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:23:17.817Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:23:19.989Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:23:26.282Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:23:40.858Z"}
+{"level":"info","message":"Checked \"Select All\" and clicked \"Continue\".","timestamp":"2025-04-02T08:23:52.172Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:25:25.070Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:25:25.079Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:25:26.576Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:25:30.822Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:25:44.747Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:34:52.874Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:34:52.889Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:34:55.415Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:35:00.459Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:35:16.944Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T08:35:26.512Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:35:42.682Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:35:42.688Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:35:46.199Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:35:55.983Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:36:13.557Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T08:36:22.915Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:37:54.397Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:37:54.407Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:37:56.629Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:38:02.205Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:38:19.062Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T08:38:26.681Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:40:06.678Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:40:06.683Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:40:08.172Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:40:14.045Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:40:30.177Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T08:40:38.288Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:40:55.735Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:40:55.740Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:40:58.768Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:41:04.700Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:41:21.127Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T08:41:28.742Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:42:23.159Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:42:23.164Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:42:24.726Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:42:30.230Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:42:42.885Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T08:42:50.771Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:43:07.395Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:43:07.401Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:43:10.145Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:43:17.109Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:44:00.208Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:44:00.215Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:44:02.860Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:44:08.188Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:44:22.579Z"}
+{"level":"info","message":"Clicked the \"Cancel\" button.","timestamp":"2025-04-02T08:44:30.581Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:45:14.422Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:45:14.429Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:45:16.946Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:45:21.651Z"}
+{"level":"info","message":"Clicked the \"Next\" button after entering password.","timestamp":"2025-04-02T08:45:38.012Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:46:38.154Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:46:38.159Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:46:39.494Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:46:44.804Z"}
+{"error":{},"level":"error","message":"Google login failed","timestamp":"2025-04-02T08:48:33.833Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:48:41.605Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:48:41.609Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:48:43.824Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:48:47.701Z"}
+{"error":{},"level":"error","message":"Google login failed","timestamp":"2025-04-02T08:50:45.482Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:51:00.410Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:51:00.418Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:51:03.323Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:51:07.786Z"}
+{"error":{"matcherResult":{"actual":"<element(s) not found>","expected":"visible","log":["  - expect.toBeVisible with timeout 5000ms","  - waiting for getByText('Couldn’t find your Google Account')"],"message":"\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Couldn’t find your Google Account')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Couldn’t find your Google Account')\u001b[22m\n","name":"toBeVisible","pass":false,"timeout":5000},"name":"Error"},"level":"error","message":"Invalid Google login verification failed","timestamp":"2025-04-02T08:51:20.392Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:51:32.044Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:51:32.049Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:51:33.988Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:51:38.672Z"}
+{"error":{"matcherResult":{"actual":"<element(s) not found>","expected":"visible","log":["  - expect.toBeVisible with timeout 5000ms","  - waiting for getByText('Couldn’t find your Google Account')"],"message":"\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Couldn’t find your Google Account')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Couldn’t find your Google Account')\u001b[22m\n","name":"toBeVisible","pass":false,"timeout":5000},"name":"Error"},"level":"error","message":"Invalid Google login verification failed","timestamp":"2025-04-02T08:51:49.572Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:52:02.935Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:52:02.942Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:52:05.082Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:52:09.632Z"}
+{"error":{},"level":"error","message":"Google login failed","timestamp":"2025-04-02T08:54:01.342Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T08:54:09.639Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T08:54:09.644Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T08:54:11.815Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T08:54:16.140Z"}
+{"level":"info","message":"Navigated to https://me:SmipMe123456@demo.spikerz.com","timestamp":"2025-04-02T09:02:54.205Z"}
+{"level":"info","message":"Accessing baseURL","timestamp":"2025-04-02T09:02:54.210Z"}
+{"level":"info","message":"Navigated to https://demo.spikerz.com/social-connect","timestamp":"2025-04-02T09:02:56.634Z"}
+{"level":"info","message":"Clicked YouTube button","timestamp":"2025-04-02T09:03:01.126Z"}
+{"error":{},"level":"error","message":"Google login failed","timestamp":"2025-04-02T09:03:54.564Z"}

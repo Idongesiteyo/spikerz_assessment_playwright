@@ -1,5 +1,12 @@
 import { Page, expect } from '@playwright/test';
 import {BasePage} from './BasePage';
+import  logger  from '../utils/logger';
+
+// import { chromium } from "playwright-extra";
+// import stealth from 'puppeteer-extra-plugin-stealth';
+
+// // Add stealth before launching the browser
+// chromium.use(stealth());
 
 export default class GooglePopupPage extends BasePage {
     private readonly continueButton = 'button:has-text("Continue")';
@@ -19,24 +26,37 @@ export default class GooglePopupPage extends BasePage {
     }
 
     async loginToGoogle(email: string, password: string): Promise<void> {
-        await this.page.waitForLoadState('networkidle');
-        await this.page.locator(this.emailInput).fill(email);
-        await expect(this.page.locator(this.emailInput)).toHaveValue(email);
-        await this.page.locator(this.nextButton).click();
-        await this.page.locator(this.passwordInput).fill(password);
-        await expect(this.page.locator(this.passwordInput)).toHaveValue(password);
-        console.log('Clicked the "Next" button after entering password.');
+       try {
+            await this.page.waitForLoadState('networkidle');
+            await this.page.locator(this.emailInput).fill(email);
+            await expect(this.page.locator(this.emailInput)).toHaveValue(email);
+            await this.page.locator(this.nextButton).click();
+            await this.page.locator(this.passwordInput).fill(password);
+            await expect(this.page.locator(this.passwordInput)).toHaveValue(password);
+            logger.info('Clicked the "Next" button after entering password.');
         
-        await this.page.locator(this.nextButton).click();
+            await this.page.locator(this.nextButton).click();
+            logger.debug('Completed Google login process');
+    }catch (error) {
+            logger.error('Google login failed', { error });
+            throw error;
+        }
     }
 
     async invalidloginToGoogle(email: string, password: string): Promise<void> {
-        await this.page.waitForLoadState('networkidle');
-        await this.page.locator(this.emailInput).fill(email);
-        await this.page.locator(this.nextButton).click();
-        const errorMessage = await this.page.getByText(this.emailErrorMessage);
-        await expect(errorMessage).toBeVisible();
-        await expect(errorMessage).toHaveText('Couldn’t find your Google Account');
+       try{
+            await this.page.waitForLoadState('networkidle');
+            await this.page.locator(this.emailInput).fill(email);
+            await this.page.locator(this.nextButton).click();
+            const errorMessage = await this.page.getByText(this.emailErrorMessage);
+            await expect(errorMessage).toBeVisible();
+            await expect(errorMessage).toHaveText('Couldn’t find your Google Account');
+            logger.info('Verified invalid Google login error message');
+       } catch (error) {
+            logger.error('Invalid Google login verification failed', { error });
+            throw error;
+        }
+
     }
     
     
@@ -48,31 +68,36 @@ export default class GooglePopupPage extends BasePage {
                 await this.page.locator(this.selectAllCheckbox).check();
                 await expect(this.page.locator(this.selectAllCheckbox)).toBeChecked();
                 await this.page.locator(this.continueButton).click();
-                console.log('Checked "Select All" and clicked "Continue".');
+                logger.info('Checked "Select All" and clicked "Continue".');
+
             } else {
                 throw new Error('Page is already closed. Cannot proceed.');
             }
         } catch (error) {
-            console.warn('Select All checkbox not visible, checking other conditions.');
+            logger.warn('Select All checkbox not visible, checking other conditions.');
     
             
             if (!this.page.isClosed()) {
                 const isSpikerzAccessTextVisible = await this.page.locator('text=Spikerz already has some').isVisible();
                 if (isSpikerzAccessTextVisible) {
-                    console.log('"Spikerz already has some" text is visible.');
+                    logger.info('"Spikerz already has some" text is visible.');
     
                     const isContinueButtonEnabled = await this.page.locator(this.continueButton).isEnabled();
                     if (isContinueButtonEnabled) {
                         await this.page.locator(this.continueButton).click();
-                        console.log('Clicked "Continue" on permission screen.');
+                        logger.info('Clicked "Continue" on permission screen.');
                     } else {
                         throw new Error('Continue button is not enabled.');
                     }
                 } else {
-                    throw new Error('Neither checkbox nor "Spikerz already has some" text is visible. Cannot proceed.');
+                    const error = new Error('Neither checkbox nor "Spikerz already has some" text is visible. Cannot proceed.');
+                    logger.error(error.message);
+                    throw error;
                 }
             } else {
-                throw new Error('Page is closed, cannot verify visibility.');
+                const error =  new Error('Page is closed, cannot verify visibility.');
+                logger.error(error.message);
+                throw error;
             }
         }
     }
@@ -93,7 +118,7 @@ export default class GooglePopupPage extends BasePage {
     async clickCancelButton(): Promise<void> {
         await this.page.locator(this.cancelButton).waitFor({ state: 'visible' });
         await this.page.locator(this.cancelButton).click();
-        console.log('Clicked the "Cancel" button.');
+        logger.info('Clicked the "Cancel" button.');
     }
 
     async verifyBakeryShopVisible(): Promise<void> {
