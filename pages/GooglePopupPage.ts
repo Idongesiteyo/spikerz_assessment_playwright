@@ -64,7 +64,7 @@ export default class GooglePopupPage extends BasePage {
         try {
             if (!this.page.isClosed()) {
                 
-                await this.page.locator(this.selectAllCheckbox).waitFor({ state: 'visible', timeout: 60000 });
+                await this.page.locator(this.selectAllCheckbox).waitFor({ state: 'visible', timeout: 30000 });
                 await this.page.locator(this.selectAllCheckbox).check();
                 await expect(this.page.locator(this.selectAllCheckbox)).toBeChecked();
                 await this.page.locator(this.continueButton).click();
